@@ -1,0 +1,91 @@
+@media(min-width:800px){
+
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        /* gap : 20%; */
+        box-shadow: 3px 3px 5px 6px #ccc;
+
+    }
+
+    /*  Les boutons ont la même couleur que le header*/
+    li>button,.nav-menu{
+        background-color: rgb(243, 243, 243);
+        margin: 0;
+        padding: 0;
+    }
+
+    .name , .menu{
+        margin-top: 1%;
+        padding-top: 0%;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+    }
+
+    .name{
+        list-style: none;
+        padding-left: 0%;
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+
+    .name>span{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    /*Curseur sur le lien*/
+    .name>li :hover,.menu>li :hover{
+        color: rgb(186, 162, 203);
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 50%;
+        /* gap : 10px; */
+        align-items: flex-end;
+        align-content: flex-end;
+        /* justify-content: space-between; */
+        align-content: flex-end;
+        padding-right: 1%;
+        margin-right: 1%;
+        padding-left: 5%;
+    }
+
+    .menu>li{
+        /* padding-left: 1%; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+}
+
+
+/*  A revoir */ /* fye!!! */
+@media(max-width:800px){
+
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-menu :hover{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        /* gap : 20%; */
+        box-shadow: 3px 3px 5px 6px #ccc;
+
+    }
+
+
+}
+
