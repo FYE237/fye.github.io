@@ -25,9 +25,18 @@ footer{
     background-color: rgb(194, 198, 193);
     text-align: center;
     justify-content: center;
-    height: 20vh;
+    height: 15vh;
     bottom: 0%;
     position: fixed; /* Pour que le footer reste tout le temps en dessous*/
     width: 100%;
     border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+app-footer{
+    margin: 0%;
+    padding-top: 0%;
+    display: flex;
+    flex-grow: 1;
 }
