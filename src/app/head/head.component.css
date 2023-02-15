@@ -1,5 +1,13 @@
 @media(min-width:800px){
 
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+    }
+
     .nav-menu{
         display: flex;
         flex-direction: row;
@@ -34,9 +42,6 @@
         padding-left: 0%;
     }
 
-    .name>span{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
 
     /*Curseur sur le lien*/
     .name>li :hover,.menu>li :hover{
@@ -58,7 +63,7 @@
         padding-left: 5%;
     }
 
-    .menu>li{
+    .menu>li , .name>li{
         /* padding-left: 1%; */
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
@@ -69,11 +74,29 @@
 /*  A revoir */ /* fye!!! */
 @media(max-width:800px){
 
-    .nav-menu{
+    .nav-menu,.name {
         display: none;
+    } 
+
+    .container{
+        background-color: rgb(199, 187, 187);
+        width: 100%;
     }
 
-    .nav-menu :hover{
+    .name , .menu , .nav-menu{
+        list-style: none;
+    } 
+
+    .container::before{
+		content: "☰";
+	}
+    
+    .container:hover {
+        color: rebeccapurple;
+    }
+
+    .container:hover > .nav-menu{
+        display: block;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -81,11 +104,38 @@
         margin: 0%;
         padding: 0%;
         width: 100%;
-        /* gap : 20%; */
-        box-shadow: 3px 3px 5px 6px #ccc;
 
+        background-color: rgb(199, 187, 187);
     }
+
+    li{
+        border: 2px solid wheat;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+     /*Curseur sur le lien*/
+     .name>li :hover,.menu>li :hover{
+        color : rebeccapurple;
+    }
+
+    li>button{
+        background-color: rgb(199, 187, 187);
+        margin: 0;
+        padding: 0;
+    }
+    
+
+
 
 
 }
+
 

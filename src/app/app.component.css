@@ -1,3 +1,16 @@
+
+@media(max-width:800px){
+     
+     app-footer{
+         margin: 0%;
+         padding-top: 0%;
+         display: flex;
+         flex-grow: 1;
+         background-color: rgb(199, 187, 187);
+     }
+     
+}
+
 header{
    margin: 0%;
    display: flex;
@@ -40,3 +53,4 @@ app-footer{
     display: flex;
     flex-grow: 1;
 }
+

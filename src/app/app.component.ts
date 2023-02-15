@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GestionAffichageService } from './service/gestion-affichage.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myPortfolio';
+  
+
+  constructor(private myservice: GestionAffichageService) { }
+
+  ngOnInit() {
+      this.myservice.showfooter();
+  }
+
+  getValue(){
+    return this.myservice.getvalueFooter();
+  }
+
 }

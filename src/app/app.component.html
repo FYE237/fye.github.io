@@ -3,9 +3,14 @@
 </header>
 
 <main>
-  <app-home></app-home>
+  <!-- <app-home></app-home> -->
+  <router-outlet></router-outlet>
 </main>
 
-<footer>
-    <app-footer></app-footer>
-</footer>
+<span *ngIf="getValue() ; then condition1 ">Hello</span>
+
+<ng-template #condition1>
+  <footer>
+      <app-footer></app-footer>
+  </footer>
+</ng-template>

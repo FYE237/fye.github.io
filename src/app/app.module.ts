@@ -10,6 +10,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 
@@ -18,7 +22,11 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeadComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    AboutMeComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

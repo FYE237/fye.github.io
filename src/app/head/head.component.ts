@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { GestionAffichageService } from '../service/gestion-affichage.service';
 
 
 @Component({
@@ -8,9 +10,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router , private myservice: GestionAffichageService) { }
 
   ngOnInit(): void {
+  }
+
+  goHome() {
+    this.router.navigateByUrl('');
+  }
+
+
+  showSkills() {
+    this.router.navigateByUrl('MySkills');
+    this.myservice.hidefooter();
+  }
+
+  goToProjects() {
+    this.router.navigateByUrl('Projects');
+    this.myservice.hidefooter();
+  }
+
+  showContacts() {
+    this.router.navigateByUrl('Contacts');
+    this.myservice.showfooter();
+  }
+
+  goToAboutMe() {
+    this.router.navigateByUrl('AboutMe');
+    this.myservice.showfooter();
   }
 
 }
