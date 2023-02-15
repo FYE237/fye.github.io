@@ -22,11 +22,12 @@ main{
 
 /* On fait que le footer occupe tout l'espac disponible en dessous */
 footer{
-    background-color: red;
+    background-color: rgb(194, 198, 193);
     text-align: center;
     justify-content: center;
     height: 20vh;
     bottom: 0%;
-    position: fixed;
+    position: fixed; /* Pour que le footer reste tout le temps en dessous*/
     width: 100%;
+    border-top: 1px solid black;
 }

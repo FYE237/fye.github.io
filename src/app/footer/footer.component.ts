@@ -12,4 +12,10 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  GmailLink = "";
+  GithubLink = "https://github.com/FYE237";
+  DiscordLink = "";
+
+  ImagePath = "../../assets/images/svgs/github.svg";
+
 }
