@@ -5,8 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GestionAffichageService {
 
-  
-  constructor() {}
+  constructor() { }
 
   showFooter !: boolean;
 
@@ -21,5 +20,4 @@ export class GestionAffichageService {
   getvalueFooter(){
     return this.showFooter;
   }
-
 }

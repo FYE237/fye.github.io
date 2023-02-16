@@ -10,11 +10,14 @@
             </li>
         </ul>
         <ul class="menu">
-            <li><button mat-flat-button (click)="goHome()">Home</button></li>
-            <li><button mat-flat-button (click)="goToAboutMe()">About</button></li>
-            <li><button mat-flat-button (click)="showSkills()">Skills</button></li>
-            <li><button mat-flat-button (click)="goToProjects()">Projects</button></li>
-            <li><button mat-flat-button (click)="showContacts()">Contacts</button></li>
+            <li><button mat-flat-button (click)="goHome()">
+                <mat-icon >home</mat-icon>Home</button></li>
+            <li><button mat-flat-button (click)="showSkills()">
+                <mat-icon >star_rate</mat-icon>Skills</button></li>
+            <li><button mat-flat-button (click)="goToProjects()">
+                <mat-icon >work_outline</mat-icon>Projects</button></li>
+            <li><button mat-flat-button (click)="showContacts()">
+                <mat-icon >contact_mail</mat-icon>Contacts</button></li>
 
         </ul>
     </nav>

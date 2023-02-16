@@ -1,4 +1,4 @@
-@media(min-width:800px){
+@media(min-width:801px){
 
     .container{
         display: flex;
@@ -26,6 +26,10 @@
         background-color: rgb(243, 243, 243);
         margin: 0;
         padding: 0;
+        font-family: Georgia;
+        font-weight: bolder;
+        font-size: medium;
+
     }
 
     .name , .menu{
@@ -53,7 +57,7 @@
         flex-direction: row;
         list-style: none;
         width: 50%;
-        /* gap : 10px; */
+        gap : 20px;
         align-items: flex-end;
         align-content: flex-end;
         /* justify-content: space-between; */
@@ -65,10 +69,13 @@
 
     .menu>li , .name>li{
         /* padding-left: 1%; */
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia;
     }
 
+  
+
 }
+
 
 
 /*  A revoir */ /* fye!!! */

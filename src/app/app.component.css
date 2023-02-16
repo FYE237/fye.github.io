@@ -27,10 +27,16 @@ app-head{
 
 main{
     display: flex;
-    flex-direction: row;
-    flex-grow: 2;
-    height: 80vh;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    /* height: 100vh; */
+    width: 100%;
+    flex-grow: 1;
+
 }
+
+
+
 
 
 /* On fait que le footer occupe tout l'espac disponible en dessous */
@@ -38,9 +44,10 @@ footer{
     background-color: rgb(194, 198, 193);
     text-align: center;
     justify-content: center;
-    height: 15vh;
+    height: 10vh;
     bottom: 0%;
-    position: fixed; /* Pour que le footer reste tout le temps en dessous*/
+    position: fixed;
+     /* Pour que le footer reste tout le temps en dessous*/
     width: 100%;
     border-top: 1px solid black;
     display: flex;

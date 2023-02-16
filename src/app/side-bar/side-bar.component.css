@@ -1,0 +1,77 @@
+@media(min-width : 801px){
+
+    .personne{
+        clip-path:ellipse(50% 50%);
+        width : auto;
+        height : 150px;
+        align-self: center;
+    }
+
+}
+
+
+@media(max-width : 800px){
+
+    .personne{
+        clip-path:ellipse(50% 50%);
+        width : auto;
+        height : 100px;
+        align-self: center;
+    }  
+    
+}
+
+        aside{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-top: 3%;
+            gap: 10px;
+            margin-left: 0;
+            padding-left: 0;
+
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            gap: 5px;
+            margin-left: 10%;
+
+        }
+
+        button{
+            margin-left: 10%;
+        }
+
+        li{
+
+            display: flex;
+            flex-direction: row;
+            font-family: Georgia;
+            flex-grow: 1;
+            gap: 2px;
+            
+        }
+
+
+        a{
+            align-self: center;
+            padding-right: 10%;
+        }
+     
+
+        .side,li{
+            list-style: none;
+        }
+
+        span,p,button{
+            font-family: Georgia;
+
+        }
+
+
+
+

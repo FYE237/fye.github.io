@@ -14,6 +14,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { GestionAffichageService } from './service/gestion-affichage.service';
+import { MatDividerModule } from '@angular/material/divider';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 
 
@@ -26,7 +29,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     AboutMeComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactsComponent
+    ContactsComponent,
+    SideBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,8 +39,9 @@ import { ContactsComponent } from './contacts/contacts.component';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+    MatDividerModule,
   ],
-  providers: [],
+  providers: [GestionAffichageService],
   bootstrap: [AppComponent]
 }
 )

@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private myservice: GestionAffichageService) { }
 
   ngOnInit() {
-      this.myservice.showfooter();
+      this.myservice.hidefooter();
   }
 
   getValue(){
