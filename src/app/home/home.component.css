@@ -58,7 +58,7 @@
         flex-grow: 1;
         display: flex;
         flex-direction: row;
-        width: 100vh;
+        /* width: 100vh; */
         margin:0;
         padding: 0;
     }
@@ -129,7 +129,7 @@
 
     }
 
-    .field2>div{
+    .field2>.domaine{
         /* flex-grow: 1; */
         width: 100px;
         height: 100px ;

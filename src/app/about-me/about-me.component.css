@@ -33,7 +33,7 @@
     
     .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         flex-grow: 1  ;
         gap: 5%;
@@ -44,6 +44,7 @@
 }
 
         h2{
+            
             font-family: Georgia;
             align-self: center;
             justify-self: center;
