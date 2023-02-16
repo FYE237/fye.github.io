@@ -37,7 +37,7 @@ export class HeadComponent implements OnInit {
 
   goToAboutMe() {
     this.router.navigateByUrl('AboutMe');
-    this.myservice.showfooter();
+    this.myservice.hidefooter();
   }
 
 }
