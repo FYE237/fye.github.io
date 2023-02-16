@@ -44,6 +44,8 @@
 
         button{
             margin-left: 10%;
+            background-color : blueviolet;
+            color : white
         }
 
         li{
@@ -70,6 +72,10 @@
         span,p,button{
             font-family: Georgia;
 
+        }
+
+        li>mat-icon{
+            color : teal;
         }
 
 
