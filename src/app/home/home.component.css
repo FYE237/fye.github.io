@@ -146,6 +146,15 @@
         
     }
 
+
+    .field2 :hover{
+        background-color: rgb(185, 145, 222);
+        color: antiquewhite;
+    }
+
+    
+
+   
        
 
     span>mat-icon{
