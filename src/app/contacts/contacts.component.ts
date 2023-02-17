@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GestionAffichageService } from '../service/gestion-affichage.service';
 
 @Component({
   selector: 'app-contacts',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myService : GestionAffichageService) {      this.myService.showfooter();
+  }
 
   ngOnInit(): void {
   }
+
+
 
 }

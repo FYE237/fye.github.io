@@ -2,28 +2,55 @@
 
     .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
+        height: 90vh;
         flex-grow: 1  ;
         gap: 5%;
-        margin-left: 0%;
+       margin-bottom: 0%;
+       align-items: center;
+       justify-items: center;
+        /* background-color: blueviolet; */
+    }
+
+    .contenu{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(198, 212, 212);
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        gap: 10%;
 
     }
+
+    section{
+        /* border: 1px solid black; */
+        flex-grow:  1;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        margin-top: 5%;
+
+    }
+
+    .other{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap : 10px
+    }
+
+    .social-bloc{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
 
    
-    section{
-        display: flex;
-        margin-top: 1%;
-        font-family: Georgia;
-        flex-direction: column;
-        width: 100vh;
-        height: 100%;
-        flex-grow: 2;
-        margin-right: 3%;
-        padding-right: 0%;
-        margin-bottom: 1%;
-        padding-bottom: 1%;
-    }
 
 }
 
@@ -37,47 +64,70 @@
         width: 100%;
         flex-grow: 1  ;
         gap: 5%;
-        margin-left: 0%;
+        margin-left: 10%;
+        margin-top: 10%;
+        /* background-color: rgb(53, 85, 85); */
+
 
     }  
 
+    .contenu{
+        display: flex;
+        flex-direction: column;
+        /* background-color: aqua; */
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        gap: 10%;
+    }
+
+    section{
+        /* background-color: bisque; 
+        border: 1px solid black; */
+        flex-grow:  1;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        margin-top: 5%;
+
+    }
+
+    .social-bloc{
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
-        h2{
-            
-            font-family: Georgia;
-            align-self: center;
-            justify-self: center;
-            font-weight: bolder;
-            color: rgb(129, 117, 101);
-        }
+h2{
+    font-family: Georgia;
+    font-weight: bolder;
+}
 
-        div{
-            display: flex;
-            flex-direction:column ;
-            height: 100%;
-            flex:1
-            
-        }
+span,a{
+    font-family: Georgia;
+}
+   
 
-        p{
-            flex-grow: 1;
-        }
-        p::first-letter{
-            font-weight: bold;
-            font-size:  3em; ;
-        }
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 
+mat-icon{
+    color: rgb(173, 137, 208);
+}
 
-        .side,li{
-            list-style: none;
-        }
+.other{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
-        span,p,button{
-            font-family: Georgia;
+img{
+    height: 30px;
+}
 
-        }
-
-
-
-
+  
